@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Class Learning App</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#2563eb">
+</head>
+
+<body>
+
+<header>
+    <h1>📚 One Class Learning App</h1>
+
+    <input type="text" id="search" placeholder="Search Lesson...">
+
+    <button id="themeBtn">🌙 Dark Mode</button>
+</header>
+
+<nav>
+    <button class="tab active" data-tab="english">English</button>
+    <button class="tab" data-tab="urdu">Urdu</button>
+    <button class="tab" data-tab="math">Math</button>
+</nav>
+
+<main>
+
+<section id="english" class="content active">
+
+<h2>English</h2>
+
+<div class="card">
+<h3>Lesson 1</h3>
+<p>Alphabet A-Z</p>
+<button onclick="openLesson('Alphabet A-Z')">
+Open
+</button>
+</div>
+
+<div class="card">
+<h3>Lesson 2</h3>
+<p>Parts of Speech</p>
+<button onclick="openLesson('Parts of Speech')">
+Open
+</button>
+</div>
+
+<div class="card">
+<h3>Lesson 3</h3>
+<p>Tenses</p>
+<button onclick="openLesson('Tenses')">
+Open
+</button>
+</div>
+
+</section>
+
+<section id="urdu" class="content">
+
+<h2>Urdu</h2>
+
+<div class="card">
+<h3>سبق 1</h3>
+<p>حروف تہجی</p>
+<button onclick="openLesson('حروف تہجی')">
+کھولیں
+</button>
+</div>
+
+<div class="card">
+<h3>سبق 2</h3>
+<p>اسم، فعل، حرف</p>
+<button onclick="openLesson('اسم، فعل، حرف')">
+کھولیں
+</button>
+</div>
+
+<div class="card">
+<h3>سبق 3</h3>
+<p>مضمون نویسی</p>
+<button onclick="openLesson('مضمون نویسی')">
+کھولیں
+</button>
+</div>
+
+</section>
+
+<section id="math" class="content">
+
+<h2>Mathematics</h2>
+
+<div class="card">
+<h3>Chapter 1</h3>
+<p>Numbers</p>
+<button onclick="openLesson('Numbers')">
+Open
+</button>
+</div>
+
+<div class="card">
+<h3>Chapter 2</h3>
+<p>Addition & Subtraction</p>
+<button onclick="openLesson('Addition')">
+Open
+</button>
+</div>
+
+<div class="card">
+<h3>Chapter 3</h3>
+<p>Multiplication</p>
+<button onclick="openLesson('Multiplication')">
+Open
+</button>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<button id="installBtn" hidden>
+📲 Install App
+</button>
+
+<p>© 2026 One Class Learning App</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
